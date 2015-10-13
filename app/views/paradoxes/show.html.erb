@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @paradox.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @paradox.author %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @paradox.description %>
+</p>
+
+<%= link_to 'Edit', edit_paradox_path(@paradox) %> |
+<%= link_to 'Back', paradoxes_path %>

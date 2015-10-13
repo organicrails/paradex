@@ -1,0 +1,2 @@
+module ParadoxesHelper
+end
