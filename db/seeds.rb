@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Paradox.create(title:"Buridan's Bridge", author:"Jean Buridan", description:"Imagine the following scenario: Socrates wants to cross a river and comes to a bridge guarded by Plato, who says:
+Plato: Socrates, if in the first proposition which you utter, you speak the truth, I will permit you to cross. But surely, if you speak falsely, I shall throw you into the water.
+Socrates: You will throw me into the water")
+Paradox.create(title:"Paradox of Fiction", author:"Colin Radford", description:" Most people have emotional responses to characters, objects, events etc. which they know to be fictitious.
+On the other hand, in order for us to be emotionally moved, we must believe that these characters, objects, or events, truly exist.
+But no person who takes characters or events to be fictional at the same time believes that they are real.")
+Paradox.create(title:"Fitch's paradox of knowability", author:"Frederich Fitch", description:"It provides a challenge to the knowability thesis, which states that every truth is, in principle, 
+knowable. The paradox is that this assumption implies the omniscience principle, which asserts that every truth is known. Essentially, Fitch's paradox asserts that the existence of an unknown truth is unknowable. So if all truths were knowable, it would follow that all truths are in fact known.")
+Paradox.create(title:"Paradox of hedonism", author:"Henry Sidgwick", description:"The impulse towards pleasure can be self-defeating. We fail to attain pleasures if we deliberately seek them.")
+Paradox.create(title:"Meno's paradox", author:"Meno", description:"Meno asks Socrates: 'And how will you inquire into a thing when you are wholly ignorant of what it is? Even if you happen to bump right into it, how will you know it is the thing you didn't know?'
+	Socrates rephrases the question, which has come to be the canonical statement of the paradox: 'A man cannot search either for what he knows or for what he does not know. He cannot search for what he knows--since he knows it, there is no need to search--nor for what he does not know, for he does not know what to look for.'")
