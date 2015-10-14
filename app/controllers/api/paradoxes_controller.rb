@@ -30,6 +30,32 @@ class Api::ParadoxesController < ApplicationController
 		end
 	end
 
+	def update
+		paradox = Paradox.find(params[:id])
+		if paradox.update(paradox_params)
+			render json: {
+				status: 200,
+				message: "Successfully Updated Paradox",
+				paradox: paradox
+			}.to_json
+		else
+			render json: {
+				status: 422,
+				message: "Paradox cannot be Updated",
+				paradox: paradox
+			}.to_json
+		end
+	end
+
+	def destroy
+		paradox = Paradox.find(params[:id])
+		paradox.destroy
+		render json: {
+			status: 200,
+			message: "Successfully Deleted a Paradox."
+		}.to_json
+	end
+
 	private
 
 	def paradox_params
